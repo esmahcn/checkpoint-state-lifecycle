@@ -1,12 +1,56 @@
-# React + Vite
+# 🛠️ React Debugging Checkpoint – State & Lifecycle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Name:
+**checkpoint-state-lifecycle**
 
-Currently, two official plugins are available:
+## 📅 Date:
+August 2, 2025
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Tools Used:
+- React (Class-based Component)
+- React Developer Tools (Microsoft Edge extension)
+- Tailwind CSS (for styling)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Objective:
+The goal of this checkpoint was to **debug a React application** using the **React Developer Tools** browser extension. The application consists of a class-based component that renders a user profile and tracks time since mount using `setInterval`.
+
+---
+
+## ✅ Tasks Completed:
+
+- [x] Ran the app in the browser (`localhost:5173`)
+- [x] Opened React DevTools and navigated through the component tree
+- [x] Inspected the `App` component's **state** and **props**
+- [x] Toggled the `shows` boolean using DevTools
+- [x] Confirmed that `secondsElapsed` increases over time
+- [x] Verified the profile is conditionally rendered
+- [x] Simulated broken image URL and fixed it
+- [x] Documented the debugging process
+
+---
+
+## 🔍 Issues Found and Resolved:
+
+| Issue | Fix |
+|-------|-----|
+| `shows` not updating correctly | Used DevTools to verify and fixed event handler |
+| `imgSrc` was broken | Replaced with a valid image URL |
+| `secondsElapsed` didn't reset on toggle | Confirmed expected behavior and improved UX |
+
+---
+
+## ✅ Final Result:
+The app functions as expected. All state values and rendering behavior were verified using React Developer Tools. Conditional rendering and lifecycle methods were tested and debugged successfully.
+
+---
+
+## 🧠 Learnings:
+- How to use **React DevTools** to inspect and manipulate state & props
+- How to debug lifecycle behavior (componentDidMount + setInterval)
+- How to simulate and fix common React issues interactively
+
+---
+
+## 🚀 Screenshot (Optional)
